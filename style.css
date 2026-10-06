@@ -1,80 +1,283 @@
 body {
     margin: 0;
-    background: white;
-    color: #222;
+    padding: 0;
+
     font-family: Arial, Helvetica, sans-serif;
+
+    color: #222;
+    background-color: white;
+
+    font-size: 16px;
     line-height: 1.6;
 }
 
+
 .container {
-    max-width: 850px;
-    margin: 60px auto;
-    padding: 0 30px;
+    max-width: 900px;
+
+    margin: 0 auto;
+    padding: 45px 30px 70px 30px;
 }
 
-h1 {
-    font-size: 36px;
-    margin-bottom: 5px;
-    font-weight: 500;
+
+/* HEADER */
+
+header {
+    margin-bottom: 45px;
 }
+
+
+header h1 {
+    margin: 0 0 5px 0;
+
+    font-size: 34px;
+    font-weight: 600;
+}
+
 
 .position {
-    margin-top: 0;
-    color: #555;
+    margin: 0 0 15px 0;
+
+    color: #444;
 }
+
 
 nav {
-    margin-top: 25px;
-    margin-bottom: 50px;
+    margin-top: 15px;
 }
+
 
 nav a {
-    margin-right: 25px;
-}
+    margin-right: 22px;
 
-a {
-    color: #1a5fb4;
+    color: #0066cc;
     text-decoration: none;
 }
 
-a:hover {
+
+nav a:hover {
     text-decoration: underline;
 }
 
-h2 {
-    font-size: 24px;
-    margin-top: 55px;
-    border-bottom: 1px solid #ddd;
-    padding-bottom: 6px;
-}
 
-h3 {
-    font-size: 18px;
-    margin-top: 30px;
-}
-
-.paper-title {
-    font-weight: 500;
-}
+/* INTRO */
 
 .intro {
     display: flex;
-    gap: 35px;
+
     align-items: flex-start;
+
+    gap: 35px;
+
+    margin-bottom: 50px;
 }
+
 
 .intro img {
     width: 180px;
+
     height: auto;
+
+    object-fit: cover;
 }
 
-@media (max-width: 600px) {
-    .intro {
-        display: block;
+
+.intro p {
+    margin-top: 0;
+    margin-bottom: 14px;
+}
+
+
+/* SECTIONS */
+
+section {
+    margin-bottom: 50px;
+}
+
+
+h2 {
+    font-size: 25px;
+    font-weight: 600;
+
+    margin-top: 0;
+    margin-bottom: 22px;
+
+    padding-bottom: 5px;
+
+    border-bottom: 1px solid #ddd;
+}
+
+
+h3 {
+    font-size: 18px;
+    font-weight: 600;
+
+    margin-top: 30px;
+    margin-bottom: 15px;
+}
+
+
+/* PAPERS */
+
+.paper {
+    margin-bottom: 24px;
+}
+
+
+.paper p {
+    margin-top: 0;
+    margin-bottom: 5px;
+}
+
+
+.paper-title {
+    font-weight: 600;
+}
+
+
+.paper-links {
+    display: flex;
+
+    align-items: center;
+
+    gap: 15px;
+
+    margin-top: 4px;
+}
+
+
+/* LINKS */
+
+a {
+    color: #0066cc;
+}
+
+
+.paper-links a {
+    color: #0066cc;
+    text-decoration: underline;
+}
+
+
+/* ABSTRACT BUTTON */
+
+.abstract-button {
+    margin: 0;
+    padding: 0;
+
+    border: none;
+    background: none;
+
+    font-family: inherit;
+    font-size: inherit;
+
+    color: #0066cc;
+    text-decoration: underline;
+
+    cursor: pointer;
+}
+
+
+.abstract-button:hover {
+    color: #003f80;
+}
+
+
+/* ABSTRACT */
+
+.abstract-text {
+    display: none;
+
+    max-width: 780px;
+
+    margin-top: 12px;
+    margin-bottom: 10px;
+
+    color: #333;
+}
+
+
+.abstract-text.show {
+    display: block;
+}
+
+
+.abstract-text p {
+    margin: 0;
+
+    line-height: 1.6;
+}
+
+
+/* TEACHING */
+
+.teaching-item {
+    margin-bottom: 18px;
+}
+
+
+.teaching-line {
+    display: flex;
+
+    justify-content: space-between;
+    align-items: flex-start;
+
+    gap: 30px;
+}
+
+
+.date {
+    white-space: nowrap;
+}
+
+
+.evaluation {
+    margin-top: 5px;
+    margin-bottom: 0;
+
+    margin-left: 15px;
+
+    font-style: italic;
+
+    color: #555;
+}
+
+
+/* MOBILE */
+
+@media (max-width: 650px) {
+
+    .container {
+        padding: 30px 20px 50px 20px;
     }
 
-    .intro img {
-        width: 150px;
-        margin-bottom: 20px;
+
+    .intro {
+        flex-direction: column;
+
+        gap: 20px;
     }
+
+
+    .intro img {
+        width: 160px;
+    }
+
+
+    .teaching-line {
+        flex-direction: column;
+
+        gap: 2px;
+    }
+
+
+    .date {
+        color: #555;
+    }
+
+
+    nav a {
+        margin-right: 15px;
+    }
+
 }
