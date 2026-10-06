@@ -1,3 +1,8 @@
+html {
+    scroll-behavior: smooth;
+}
+
+
 body {
     margin: 0;
     padding: 0;
@@ -23,7 +28,7 @@ body {
 /* HEADER */
 
 header {
-    margin-bottom: 45px;
+    margin-bottom: 40px;
 }
 
 
@@ -36,31 +41,43 @@ header h1 {
 
 
 .position {
-    margin: 0 0 15px 0;
+    margin: 0 0 18px 0;
 
     color: #444;
 }
 
 
+/* TOP NAVIGATION */
+
 nav {
-    margin-top: 15px;
+    display: flex;
+
+    gap: 28px;
+
+    padding-bottom: 10px;
+
+    border-bottom: 1px solid #ddd;
 }
 
 
 nav a {
-    margin-right: 22px;
+    color: #555;
 
-    color: #0066cc;
+    font-size: 16px;
+    font-weight: 500;
+
     text-decoration: none;
+
+    transition: color 0.15s ease;
 }
 
 
 nav a:hover {
-    text-decoration: underline;
+    color: #111;
 }
 
 
-/* INTRO */
+/* PROFILE */
 
 .intro {
     display: flex;
@@ -69,7 +86,7 @@ nav a:hover {
 
     gap: 35px;
 
-    margin-bottom: 50px;
+    margin-bottom: 65px;
 }
 
 
@@ -91,109 +108,164 @@ nav a:hover {
 /* SECTIONS */
 
 section {
-    margin-bottom: 50px;
+    margin-bottom: 65px;
 }
 
 
-h2 {
-    font-size: 25px;
+#research,
+#teaching {
+    scroll-margin-top: 30px;
+}
+
+
+/* SECTION HEADINGS */
+
+.section-heading {
+    margin-top: 42px;
+    margin-bottom: 19px;
+
+    padding: 0;
+
+    border: none;
+
+    font-size: 22px;
     font-weight: 600;
 
+    color: #222;
+}
+
+
+.research-section > .section-heading:first-child,
+#teaching > .section-heading:first-child {
     margin-top: 0;
-    margin-bottom: 22px;
-
-    padding-bottom: 5px;
-
-    border-bottom: 1px solid #ddd;
-}
-
-
-h3 {
-    font-size: 18px;
-    font-weight: 600;
-
-    margin-top: 30px;
-    margin-bottom: 15px;
 }
 
 
 /* PAPERS */
 
 .paper {
-    margin-bottom: 24px;
+    margin-bottom: 30px;
 }
 
 
 .paper p {
     margin-top: 0;
-    margin-bottom: 5px;
 }
 
 
 .paper-title {
+    margin-bottom: 2px;
+
+    font-size: 16.5px;
     font-weight: 600;
 }
 
+
+/* CLICKABLE PAPER TITLES */
+
+.paper-title a {
+    color: #222;
+
+    text-decoration: none;
+
+    transition: color 0.15s ease;
+}
+
+
+.paper-title a:hover {
+    color: #0066cc;
+}
+
+
+.no-link {
+    color: #222;
+}
+
+
+/* COAUTHORS */
+
+.coauthors,
+.paper-note,
+.publication-info {
+    margin-top: 0;
+    margin-bottom: 4px;
+
+    font-size: 15px;
+    font-weight: 400;
+
+    color: #555;
+}
+
+
+.publication-info {
+    margin-top: -1px;
+}
+
+
+/* ABSTRACT */
 
 .paper-links {
     display: flex;
 
     align-items: center;
 
-    gap: 15px;
-
-    margin-top: 4px;
+    margin-top: 5px;
 }
 
-
-/* LINKS */
-
-a {
-    color: #0066cc;
-}
-
-
-.paper-links a {
-    color: #0066cc;
-    text-decoration: underline;
-}
-
-
-/* ABSTRACT BUTTON */
 
 .abstract-button {
+    display: inline-flex;
+
+    align-items: center;
+
+    gap: 5px;
+
     margin: 0;
-    padding: 0;
+    padding: 2px 0;
 
     border: none;
     background: none;
 
     font-family: inherit;
-    font-size: inherit;
+    font-size: 14px;
+    font-weight: 500;
 
-    color: #0066cc;
-    text-decoration: underline;
+    color: #666;
 
     cursor: pointer;
+
+    transition: color 0.15s ease;
 }
 
 
 .abstract-button:hover {
-    color: #003f80;
+    color: #0066cc;
 }
 
 
-/* ABSTRACT */
+.toggle-symbol {
+    display: inline-block;
+
+    font-size: 18px;
+    font-weight: 300;
+
+    line-height: 1;
+}
+
 
 .abstract-text {
     display: none;
 
     max-width: 780px;
 
-    margin-top: 12px;
-    margin-bottom: 10px;
+    margin-top: 13px;
+    margin-bottom: 8px;
 
-    color: #333;
+    padding-left: 15px;
+
+    border-left: 2px solid #e5e5e5;
+
+    color: #444;
 }
 
 
@@ -205,14 +277,15 @@ a {
 .abstract-text p {
     margin: 0;
 
-    line-height: 1.6;
+    font-size: 15px;
+    line-height: 1.65;
 }
 
 
 /* TEACHING */
 
 .teaching-item {
-    margin-bottom: 18px;
+    margin-bottom: 21px;
 }
 
 
@@ -228,6 +301,8 @@ a {
 
 .date {
     white-space: nowrap;
+
+    color: #555;
 }
 
 
@@ -237,9 +312,10 @@ a {
 
     margin-left: 15px;
 
+    font-size: 15px;
     font-style: italic;
 
-    color: #555;
+    color: #666;
 }
 
 
@@ -252,10 +328,17 @@ a {
     }
 
 
+    nav {
+        gap: 22px;
+    }
+
+
     .intro {
         flex-direction: column;
 
         gap: 20px;
+
+        margin-bottom: 50px;
     }
 
 
@@ -264,20 +347,15 @@ a {
     }
 
 
+    .section-heading {
+        font-size: 21px;
+    }
+
+
     .teaching-line {
         flex-direction: column;
 
         gap: 2px;
-    }
-
-
-    .date {
-        color: #555;
-    }
-
-
-    nav a {
-        margin-right: 15px;
     }
 
 }
