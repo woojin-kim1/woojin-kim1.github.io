@@ -15,6 +15,7 @@
 <div class="container">
 
     <header>
+
         <h1>Woo-Jin Kim</h1>
 
         <p class="position">
@@ -24,22 +25,23 @@
 
         <nav>
             <a href="#research">Research</a>
-            <a href="#publications">Publications</a>
             <a href="#teaching">Teaching</a>
             <a href="files/CV.pdf">CV</a>
         </nav>
+
     </header>
 
 
     <main>
 
-        <!-- INTRODUCTION -->
+        <!-- PROFILE -->
 
         <section class="intro">
 
             <img src="images/photo.jpg" alt="Woo-Jin Kim">
 
             <div>
+
                 <p>
                     I am a PhD candidate in Economics at the University of
                     Southern California.
@@ -53,6 +55,7 @@
                 <p>
                     Email: woojinki@usc.edu
                 </p>
+
             </div>
 
         </section>
@@ -60,35 +63,42 @@
 
         <!-- RESEARCH -->
 
-        <section id="research">
-
-            <h2>Research</h2>
+        <section id="research" class="research-section">
 
 
             <!-- JOB MARKET PAPER -->
 
-            <h3>Job Market Paper</h3>
+            <h2 class="section-heading">
+                Job Market Paper
+            </h2>
 
             <div class="paper">
 
                 <p class="paper-title">
-                    Consumer Learning and Competitive Inefficiency
+                    <a href="files/JMP.pdf">
+                        Consumer Learning and Competitive Inefficiency
+                    </a>
                 </p>
 
                 <div class="paper-links">
+
                     <button
                         class="abstract-button"
                         onclick="toggleAbstract('abstract-jmp', this)">
+
+                        <span class="toggle-symbol">+</span>
                         Abstract
+
                     </button>
 
-                    <a href="files/JMP.pdf">Paper</a>
                 </div>
 
                 <div id="abstract-jmp" class="abstract-text">
+
                     <p>
                         Your abstract goes here.
                     </p>
+
                 </div>
 
             </div>
@@ -96,32 +106,42 @@
 
             <!-- WORKING PAPERS -->
 
-            <h3>Working Papers</h3>
+            <h2 class="section-heading">
+                Working Papers
+            </h2>
 
 
             <div class="paper">
 
-                <p>
-                    <strong>
+                <p class="paper-title">
+                    <a href="#">
                         Entry and Optimal Screening: Quantity Caps and Endogenous Market Segmentation
-                    </strong>
+                    </a>
+                </p>
+
+                <p class="coauthors">
                     with Afshin Nikzad and Guofu Tan
                 </p>
 
                 <div class="paper-links">
+
                     <button
                         class="abstract-button"
                         onclick="toggleAbstract('abstract-entry', this)">
+
+                        <span class="toggle-symbol">+</span>
                         Abstract
+
                     </button>
 
-                    <a href="#">Paper</a>
                 </div>
 
                 <div id="abstract-entry" class="abstract-text">
+
                     <p>
                         Your abstract goes here.
                     </p>
+
                 </div>
 
             </div>
@@ -129,27 +149,35 @@
 
             <div class="paper">
 
-                <p>
-                    <strong>
+                <p class="paper-title">
+                    <a href="#">
                         Thickness and Competition in On-demand Service Platforms
-                    </strong>
+                    </a>
+                </p>
+
+                <p class="coauthors">
                     with Afshin Nikzad
                 </p>
 
                 <div class="paper-links">
+
                     <button
                         class="abstract-button"
                         onclick="toggleAbstract('abstract-thickness', this)">
+
+                        <span class="toggle-symbol">+</span>
                         Abstract
+
                     </button>
 
-                    <a href="#">Paper</a>
                 </div>
 
                 <div id="abstract-thickness" class="abstract-text">
+
                     <p>
                         Your abstract goes here.
                     </p>
+
                 </div>
 
             </div>
@@ -157,27 +185,35 @@
 
             <div class="paper">
 
-                <p>
-                    <strong>
+                <p class="paper-title">
+                    <a href="#">
                         Predicting Merger Effect
-                    </strong>
-                    (2nd Year Paper)
+                    </a>
+                </p>
+
+                <p class="paper-note">
+                    2nd Year Paper
                 </p>
 
                 <div class="paper-links">
+
                     <button
                         class="abstract-button"
                         onclick="toggleAbstract('abstract-merger', this)">
+
+                        <span class="toggle-symbol">+</span>
                         Abstract
+
                     </button>
 
-                    <a href="#">Paper</a>
                 </div>
 
                 <div id="abstract-merger" class="abstract-text">
+
                     <p>
                         Your abstract goes here.
                     </p>
+
                 </div>
 
             </div>
@@ -185,15 +221,15 @@
 
             <!-- WORK IN PROGRESS -->
 
-            <h3>Work in Progress</h3>
+            <h2 class="section-heading">
+                Work in Progress
+            </h2>
 
 
             <div class="paper">
 
-                <p>
-                    <strong>
-                        Uniform vs Discriminatory Commissions in Platform Markets
-                    </strong>
+                <p class="paper-title no-link">
+                    Uniform vs Discriminatory Commissions in Platform Markets
                 </p>
 
             </div>
@@ -201,31 +237,35 @@
 
             <div class="paper">
 
-                <p>
-                    <strong>
-                        Procurement with Quantity Guarantees: Equilibrium and Aftermarket Effects
-                    </strong>
+                <p class="paper-title no-link">
+                    Procurement with Quantity Guarantees: Equilibrium and Aftermarket Effects
+                </p>
+
+                <p class="coauthors">
                     with Yizhong Wang
                 </p>
 
             </div>
 
-        </section>
 
+            <!-- PUBLICATIONS -->
 
-        <!-- PUBLICATIONS -->
+            <h2 class="section-heading">
+                Publications
+            </h2>
 
-        <section id="publications">
-
-            <h2>Publications</h2>
 
             <div class="paper">
 
-                <p>
-                    <strong>
-                        Early Admissions with Multi-type Students
-                    </strong>
-                    with Youngwoo Koh,
+                <p class="paper-title">
+                    Early Admissions with Multi-type Students
+                </p>
+
+                <p class="coauthors">
+                    with Youngwoo Koh
+                </p>
+
+                <p class="publication-info">
                     <em>Journal of Economic Research</em>,
                     2021, 26, 209–236.
                 </p>
@@ -239,19 +279,22 @@
 
         <section id="teaching">
 
-            <h2>Teaching</h2>
-
+            <h2 class="section-heading">
+                Instructor
+            </h2>
 
             <div class="teaching-item">
 
                 <div class="teaching-line">
+
                     <span>
-                        Instructor of Bootcamp for the Core Exam (Micro Session)
+                        Boot Camp for the Core Exam (Micro Session)
                     </span>
 
                     <span class="date">
                         2023–24
                     </span>
+
                 </div>
 
                 <p class="evaluation">
@@ -262,12 +305,15 @@
             </div>
 
 
-            <h3>Teaching Assistant</h3>
+            <h2 class="section-heading">
+                Teaching Assistant
+            </h2>
 
 
             <div class="teaching-item">
 
                 <div class="teaching-line">
+
                     <span>
                         ECON 580 — Antitrust Economics and Competition Policy (Master)
                     </span>
@@ -275,6 +321,7 @@
                     <span class="date">
                         Spring 2025
                     </span>
+
                 </div>
 
             </div>
@@ -283,6 +330,7 @@
             <div class="teaching-item">
 
                 <div class="teaching-line">
+
                     <span>
                         ECON 601 — Microeconomic Theory I (PhD)
                     </span>
@@ -290,6 +338,7 @@
                     <span class="date">
                         Fall 2022, Fall 2023, Fall 2024
                     </span>
+
                 </div>
 
             </div>
@@ -298,6 +347,7 @@
             <div class="teaching-item">
 
                 <div class="teaching-line">
+
                     <span>
                         ECON 603 — Microeconomic Theory II (PhD)
                     </span>
@@ -305,6 +355,7 @@
                     <span class="date">
                         Spring 2023, Spring 2024
                     </span>
+
                 </div>
 
             </div>
@@ -321,16 +372,17 @@
     function toggleAbstract(id, button) {
 
         const abstract = document.getElementById(id);
+        const symbol = button.querySelector(".toggle-symbol");
 
         if (abstract.classList.contains("show")) {
 
             abstract.classList.remove("show");
-            button.textContent = "Abstract";
+            symbol.textContent = "+";
 
         } else {
 
             abstract.classList.add("show");
-            button.textContent = "Hide Abstract";
+            symbol.textContent = "−";
 
         }
 
