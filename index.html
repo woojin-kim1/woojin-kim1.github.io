@@ -24,15 +24,20 @@
 
         <nav>
             <a href="#research">Research</a>
+            <a href="#publications">Publications</a>
             <a href="#teaching">Teaching</a>
             <a href="files/CV.pdf">CV</a>
         </nav>
     </header>
 
+
     <main>
 
+        <!-- INTRODUCTION -->
+
         <section class="intro">
-            <img src="images/photo.jpg" alt="Woojin Kim">
+
+            <img src="images/photo.jpg" alt="Woo-Jin Kim">
 
             <div>
                 <p>
@@ -41,67 +46,297 @@
                 </p>
 
                 <p>
-                    My research interests are Microeconomic Theory, Industrial Organization, and Mechanism Design.
+                    My research interests are Microeconomic Theory,
+                    Industrial Organization, and Mechanism Design.
                 </p>
 
                 <p>
                     Email: woojinki@usc.edu
                 </p>
             </div>
+
         </section>
 
+
+        <!-- RESEARCH -->
 
         <section id="research">
 
             <h2>Research</h2>
 
+
+            <!-- JOB MARKET PAPER -->
+
             <h3>Job Market Paper</h3>
 
-            <p class="paper-title">
-               Consumer Learning and Competitive Inefficiency
-            </p>
+            <div class="paper">
 
-            <p>
-                <a href="files/JMP.pdf">Paper</a>
-            </p>
+                <p class="paper-title">
+                    Consumer Learning and Competitive Inefficiency
+                </p>
 
+                <div class="paper-links">
+                    <button
+                        class="abstract-button"
+                        onclick="toggleAbstract('abstract-jmp', this)">
+                        Abstract
+                    </button>
+
+                    <a href="files/JMP.pdf">Paper</a>
+                </div>
+
+                <div id="abstract-jmp" class="abstract-text">
+                    <p>
+                        Your abstract goes here.
+                    </p>
+                </div>
+
+            </div>
+
+
+            <!-- WORKING PAPERS -->
 
             <h3>Working Papers</h3>
-            
-            <p>
-                <strong>Entry and Optimal Screening: Quantity Caps and Endogenous
-                Market Segmentation</strong> with Afshin Nikzad and Guofu Tan<br>
-                <a href="#">Paper</a>
-            </p>
+
+
+            <div class="paper">
+
+                <p>
+                    <strong>
+                        Entry and Optimal Screening: Quantity Caps and Endogenous Market Segmentation
+                    </strong>
+                    with Afshin Nikzad and Guofu Tan
+                </p>
+
+                <div class="paper-links">
+                    <button
+                        class="abstract-button"
+                        onclick="toggleAbstract('abstract-entry', this)">
+                        Abstract
+                    </button>
+
+                    <a href="#">Paper</a>
+                </div>
+
+                <div id="abstract-entry" class="abstract-text">
+                    <p>
+                        Your abstract goes here.
+                    </p>
+                </div>
+
+            </div>
+
+
+            <div class="paper">
+
+                <p>
+                    <strong>
+                        Thickness and Competition in On-demand Service Platforms
+                    </strong>
+                    with Afshin Nikzad
+                </p>
+
+                <div class="paper-links">
+                    <button
+                        class="abstract-button"
+                        onclick="toggleAbstract('abstract-thickness', this)">
+                        Abstract
+                    </button>
+
+                    <a href="#">Paper</a>
+                </div>
+
+                <div id="abstract-thickness" class="abstract-text">
+                    <p>
+                        Your abstract goes here.
+                    </p>
+                </div>
+
+            </div>
+
+
+            <div class="paper">
+
+                <p>
+                    <strong>
+                        Predicting Merger Effect
+                    </strong>
+                    (2nd Year Paper)
+                </p>
+
+                <div class="paper-links">
+                    <button
+                        class="abstract-button"
+                        onclick="toggleAbstract('abstract-merger', this)">
+                        Abstract
+                    </button>
+
+                    <a href="#">Paper</a>
+                </div>
+
+                <div id="abstract-merger" class="abstract-text">
+                    <p>
+                        Your abstract goes here.
+                    </p>
+                </div>
+
+            </div>
+
+
+            <!-- WORK IN PROGRESS -->
 
             <h3>Work in Progress</h3>
 
+
+            <div class="paper">
+
+                <p>
+                    <strong>
+                        Uniform vs Discriminatory Commissions in Platform Markets
+                    </strong>
+                </p>
+
+            </div>
+
+
+            <div class="paper">
+
+                <p>
+                    <strong>
+                        Procurement with Quantity Guarantees: Equilibrium and Aftermarket Effects
+                    </strong>
+                    with Yizhong Wang
+                </p>
+
+            </div>
+
         </section>
 
+
+        <!-- PUBLICATIONS -->
 
         <section id="publications">
 
             <h2>Publications</h2>
 
-        </section>
-        
-            
+            <div class="paper">
+
+                <p>
+                    <strong>
+                        Early Admissions with Multi-type Students
+                    </strong>
+                    with Youngwoo Koh,
+                    <em>Journal of Economic Research</em>,
+                    2021, 26, 209–236.
+                </p>
+
+            </div>
+
         </section>
 
+
+        <!-- TEACHING -->
 
         <section id="teaching">
 
             <h2>Teaching</h2>
 
-            <p>
-                ECON 601, University of Southern California
-            </p>
+
+            <div class="teaching-item">
+
+                <div class="teaching-line">
+                    <span>
+                        Instructor of Bootcamp for the Core Exam (Micro Session)
+                    </span>
+
+                    <span class="date">
+                        2023–24
+                    </span>
+                </div>
+
+                <p class="evaluation">
+                    An evaluation from a student:
+                    “Definitely the best PhD instructor”
+                </p>
+
+            </div>
+
+
+            <h3>Teaching Assistant</h3>
+
+
+            <div class="teaching-item">
+
+                <div class="teaching-line">
+                    <span>
+                        ECON 580 — Antitrust Economics and Competition Policy (Master)
+                    </span>
+
+                    <span class="date">
+                        Spring 2025
+                    </span>
+                </div>
+
+            </div>
+
+
+            <div class="teaching-item">
+
+                <div class="teaching-line">
+                    <span>
+                        ECON 601 — Microeconomic Theory I (PhD)
+                    </span>
+
+                    <span class="date">
+                        Fall 2022, Fall 2023, Fall 2024
+                    </span>
+                </div>
+
+            </div>
+
+
+            <div class="teaching-item">
+
+                <div class="teaching-line">
+                    <span>
+                        ECON 603 — Microeconomic Theory II (PhD)
+                    </span>
+
+                    <span class="date">
+                        Spring 2023, Spring 2024
+                    </span>
+                </div>
+
+            </div>
 
         </section>
 
     </main>
 
 </div>
+
+
+<script>
+
+    function toggleAbstract(id, button) {
+
+        const abstract = document.getElementById(id);
+
+        if (abstract.classList.contains("show")) {
+
+            abstract.classList.remove("show");
+            button.textContent = "Abstract";
+
+        } else {
+
+            abstract.classList.add("show");
+            button.textContent = "Hide Abstract";
+
+        }
+
+    }
+
+</script>
 
 </body>
 </html>
