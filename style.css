@@ -93,7 +93,7 @@ nav a:hover {
 .intro img {
     width: 220px;
 
-    height: auto;
+    height: 240px;
 
     flex-shrink: 0;
 }
