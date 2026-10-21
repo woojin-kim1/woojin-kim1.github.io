@@ -91,11 +91,11 @@ nav a:hover {
 
 
 .intro img {
-    width: 180px;
+    width: 220px;
 
     height: auto;
 
-    object-fit: cover;
+    flex-shrink: 0;
 }
 
 
@@ -343,7 +343,8 @@ section {
 
 
     .intro img {
-        width: 160px;
+        width: 170px;
+        max-width: 100%;
     }
 
 
