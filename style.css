@@ -90,18 +90,63 @@ nav a:hover {
 }
 
 
+.profile-photo {
+    flex: 0 0 250px;
+
+    text-align: center;
+}
+
+
 .intro img {
     width: 240px;
+    height: 240px;
 
-    height: 300px;
+    border-radius: 50%;
 
-    flex-shrink: 0;
+    object-fit: cover;
+    object-position: center;
+
+    display: block;
+
+    margin: 0 auto;
+}
+
+
+.intro-text {
+    flex: 1;
+    min-width: 0;
 }
 
 
 .intro p {
     margin-top: 0;
     margin-bottom: 14px;
+}
+
+
+/* EMAIL BELOW PHOTO */
+
+.intro .profile-email {
+    margin-top: 15px;
+    margin-bottom: 0;
+
+    font-size: 15px;
+
+    color: #555;
+
+    white-space: nowrap;
+}
+
+
+.profile-email a {
+    color: #963e3e;
+
+    text-decoration: none;
+}
+
+
+.profile-email a:hover {
+    text-decoration: underline;
 }
 
 
@@ -181,8 +226,6 @@ section {
     color: #222;
 }
 
-
-/* COAUTHORS */
 
 .coauthors,
 .paper-note,
@@ -336,15 +379,30 @@ section {
     .intro {
         flex-direction: column;
 
-        gap: 20px;
+        gap: 25px;
 
         margin-bottom: 50px;
     }
 
 
-    .intro img {
-        width: 170px;
+    .profile-photo {
+        flex-basis: auto;
+
+        width: 250px;
         max-width: 100%;
+    }
+
+
+    .intro img {
+        width: 180px;
+        height: 180px;
+
+        max-width: 100%;
+    }
+
+
+    .intro-text {
+        width: 100%;
     }
 
 
